@@ -46,7 +46,22 @@ Pascal VOC 2012
     * Our Best Model can be downloaded from [here](https://drive.google.com/file/d/1uCfkQ0cQqkxhJI__qiCi28QowyJtsYUL/view?usp=sharing)
     * It will save results of file IDs mentioned in `test_sample.txt` in a `static` folder.
 
+### Validation
+
+* To validate using COCO API please run `python validate_COCO.py`
+
 ## Results
+
+<p align="center">
+<img src="static/loss_curves.png" width="100%"/>
+</p>
+
+Validation values on VOC 2011 validation set can be seen as (Used metric is AP on IoU=0.50:0.95)
+
+| Model | bboc mAP | segm mAP |
+| --- | --- | --- |
+| Mask-RCNN Roi-Pool  | 0.347 | 0.256 |
+| Mask-RCNN Roi-Align | 0.364 | 0.271 |
 
 
 <p align="center">
